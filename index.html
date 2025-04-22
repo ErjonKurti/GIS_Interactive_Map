@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive GIS Map | GIS DET 01</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Interactive GIS Map Application</h1>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="controls">
+            <button id="clearBtn">Clear Markers</button>
+            <button id="centerBtn">Center to My Location</button>
+        </div>
+
+        <div id="status" class="status">Loading map...</div>
+        <div id="error" class="error" style="display: none;"></div>
+
+        <div id="map-container">
+            <div id="map"></div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCE3W8KqOsCep50-FQmcc-AadleZR9qDx0&callback=initMap&libraries=geometry&v=weekly"
+        async defer></script>
+</body>
+
+</html>
